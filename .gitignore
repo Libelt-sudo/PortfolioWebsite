@@ -1,0 +1,13 @@
+# Environment / secrets
+.env
+*.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Caddy runtime data (if ever bind-mounted locally)
+data/
+config/
