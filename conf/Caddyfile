@@ -1,0 +1,4 @@
+luis-seibet.com{
+    root * /srv
+    file_server
+}

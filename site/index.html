@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luis Seibet — SWE Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, a software developer building things for the web." />
+
+  <!-- Monospace fonts for the retro-coding theme -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">&lt;superhack0r/&gt;</a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="hero__greeting">Hi, my name is</p>
+      <h1 class="hero__name">Luis Seibet.</h1>
+      <h2 class="hero__tagline"></h2>
+
+      <p class="hero__terminal">
+        <span class="prompt">$</span>
+        <span class="typed" data-typed="whoami &amp;&amp; echo 'software engineer'"></span><span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero__intro">
+        I'm a software engineer who enjoys turning ideas into clean, fast,
+        and accessible products. Currently focused on backend development.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="comment">// </span>about</h2>
+        <div class="about">
+          <p>
+            Hello! I'm a developer based in London. I love building
+            software that solves real problems and I have a deep passion for backend systems 
+            and everything that runs under the hood.
+          </p>
+          <p>
+            When I'm not at the keyboard, you'll find me exploring new tools,
+            working on side projects, or learning something new.
+            I care about good design, performance, and writing code
+            that the next person (often future me) can actually read.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="comment">// </span>technologies</h2>
+
+        <div class="skills">
+          <div class="skills__group">
+            <h3 class="skills__heading">Languages</h3>
+            <ul class="tags">
+              <li class="tag">JavaScript</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">Python</li>
+              <li class="tag">SQL</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Frameworks &amp; Libraries</h3>
+            <ul class="tags">
+              <li class="tag">FastAPI</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">Express</li>
+              <li class="tag">Django</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Tools &amp; Platforms</h3>
+            <ul class="tags">
+              <li class="tag">Git</li>
+              <li class="tag">Docker</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">Linux (Ubuntu)</li>
+              <li class="tag">Postman</li>
+              <li class="tag">Claude AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="prompt">~/projects $</span></h2>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">{ }</span>
+              <div class="card__links">
+                <!-- Links left empty on purpose — fill these in -->
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </div>
+            <h3 class="card__title">Live Leaderboard</h3>
+            <p class="card__desc">
+              A short description of what this project does, the problem it solves,
+              and what makes it interesting. Replace this with your real project.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">TypeScript</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">Docker</li>
+
+            </ul>
+            <a href="#" class="card__cta">View project &rarr;</a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">{ }</span>
+              <div class="card__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </div>
+            <h3 class="card__title">Fun Weather Service</h3>
+            <p class="card__desc">
+              Describe a second project here. Mention the stack, your role, and any
+              cool technical challenge you overcame while building it.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">Python</li>
+              <li class="tag">FastAPI</li>
+              <li class="tag"></li>
+              <li class="tag">Docker</li>
+            </ul>
+            <a href="#" class="card__cta">View project &rarr;</a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">{ }</span>
+              <div class="card__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </div>
+            <h3 class="card__title">Project Three</h3>
+            <p class="card__desc">
+              A third example project. Keep descriptions concise and outcome-focused
+              so visitors quickly understand the value of what you built.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">Python</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Linux</li>
+            </ul>
+            <a href="#" class="card__cta">View project &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <h2 class="section__title"><span class="comment">// </span>contact</h2>
+        <p class="contact__lead">
+          I'm open to new opportunities and interesting projects. Feel free to
+          reach out!
+        </p>
+        <ul class="contact__links">
+          <li><a href="mailto:seibet.07@gmail.com">seibet.07@gmail.com</a></li>
+          <li><a href="https://github.com/Libelt-sudo" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/luis-seibet-7b4734320" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p><span class="comment">// </span>built by L.S &mdash; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
