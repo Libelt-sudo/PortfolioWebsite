@@ -6,12 +6,19 @@ services:
       - "80:80"
       - "443:443"
       - "443:443/udp"
+    networks:
+      - web
     volumes:
       - ./conf:/etc/caddy
       - ./site:/srv
+      - ./leaderboard_dist:/srv/leaderboard:ro
       - caddy_data:/data
       - caddy_config:/config
 
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  web:
+    external: true

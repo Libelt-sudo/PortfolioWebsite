@@ -2,3 +2,16 @@ luis-seibet.com{
     root * /srv
     file_server
 }
+
+leaderboard.luis-seibet.com{
+    handle /api/* {
+        reverse_proxy live_leaderboard_backend:3000
+    }
+
+    hadnle {
+        root * /srv/leaderboard
+        try_files {path} /index.html
+        file_server
+    }
+    
+}
