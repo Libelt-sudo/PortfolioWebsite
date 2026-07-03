@@ -8,7 +8,7 @@ leaderboard.luis-seibet.com{
         reverse_proxy live_leaderboard_backend:3000
     }
 
-    hadnle {
+    handle {
         root * /srv/leaderboard
         try_files {path} /index.html
         file_server
