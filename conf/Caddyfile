@@ -1,17 +1,27 @@
-luis-seibet.com{
+luis-seibet.com {
     root * /srv
     file_server
 }
 
-leaderboard.luis-seibet.com{
+leaderboard.luis-seibet.com {
+
+    handle /socket.io/* {
+        reverse_proxy live_leaderboard_backend:3000
+    }
+
     handle /api/* {
         reverse_proxy live_leaderboard_backend:3000
     }
 
     handle {
         root * /srv/leaderboard
-        try_files {path} /index.html
+	try_files {path} /index.html
         file_server
     }
-    
+
+    log {
+        output stdout
+        format console
+    }
+
 }
