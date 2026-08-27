@@ -98,9 +98,13 @@
             <h3 class="skills__heading">Frameworks &amp; Libraries</h3>
             <ul class="tags">
               <li class="tag">FastAPI</li>
+              <li class="tag">Pytest</li>
               <li class="tag">Node.js</li>
               <li class="tag">Express</li>
-              <li class="tag">Django</li>
+              <li class="tag">Prima.js</li>
+              <li class="tag">Redis</li>
+              <li class="tag">Celery & Celery-beat</li>
+              
             </ul>
           </div>
 
@@ -108,11 +112,11 @@
             <h3 class="skills__heading">Tools &amp; Platforms</h3>
             <ul class="tags">
               <li class="tag">Git</li>
+              <li class="tag">Github Actions</li>
               <li class="tag">Docker</li>
               <li class="tag">PostgreSQL</li>
               <li class="tag">Linux (Ubuntu)</li>
               <li class="tag">Postman</li>
-              <li class="tag">Claude AI</li>
             </ul>
           </div>
         </div>
@@ -125,7 +129,53 @@
         <h2 class="section__title"><span class="prompt">~/projects $</span></h2>
 
         <div class="projects">
-          <!-- Project 1 -->
+
+
+          <!-- Supre Gateway -->
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">{ }</span>
+              <div class="card__links">
+                <a href="https://github.com/Libelt-sudo/supra-gateway" aria-label="Source code" title="Source code">github</a>
+              </div>
+            </div>
+            <h3 class="card__title">Supra Gateway</h3>
+            <p class="card__desc">
+                A lightweight LLM gateway that provides a unified proxy layer for routing, managing, 
+                and observing requests across large language model providers. 
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">Python</li>
+              <li class="tag">FastAPI</li>
+              <li class="tag">Google AI Studio</li>
+              <li class="tag">Groq AI</li>
+            </ul>
+            <a href="https://github.com/Libelt-sudo/supra-gateway" class="card__cta">View project &rarr;</a>
+          </article>
+
+
+          <!-- Supre Agent -->
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon" aria-hidden="true">{ }</span>
+              <div class="card__links">
+                <a href="https://github.com/Libelt-sudo/supra-agent" aria-label="Source code" title="Source code">github</a>
+              </div>
+            </div>
+            <h3 class="card__title">Supra Agent</h3>
+            <p class="card__desc">
+                An AI agent for your codebase, written entirely in Node.js. No agent frameworks here.
+            </p>
+            <ul class="tags tags--small">
+              <li class="tag">TypeScript</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">OpenAI-compatibale models</li>
+            </ul>
+            <a href="https://github.com/Libelt-sudo/supra-agent" class="card__cta">View project &rarr;</a>
+          </article>
+
+
+          <!-- Leaderboard -->
           <article class="card">
             <div class="card__top">
               <span class="card__icon" aria-hidden="true">{ }</span>
@@ -151,18 +201,17 @@
             <a href="https://leaderboard.luis-seibet.com" class="card__cta">View project &rarr;</a>
           </article>
 
-          <!-- Project 2 -->
+          <!-- Fun weather -->
           <article class="card">
             <div class="card__top">
               <span class="card__icon" aria-hidden="true">{ }</span>
               <div class="card__links">
                 <a href="https://github.com/Libelt-sudo/fun_weather_backend" aria-label="Source code" title="Source code">github</a>
-                <a href="#" aria-label="Live demo" title="Live demo">live (Disabled)</a>
               </div>
             </div>
             <h3 class="card__title">Fun Weather Service</h3>
             <p class="card__desc">
-              Weather messaging service, where you register 
+              Scheduled Data Pipeline & Notification Service, where you register 
               your phone number for daily messages with the current weather alongside a custom funny joke, 
               just for you.
             </p>
@@ -177,43 +226,20 @@
             <a href="#" class="card__cta">View project &rarr;</a>
           </article>
 
-
-          <article class="card">
-            <div class="card__top">
-              <span class="card__icon" aria-hidden="true">{ }</span>
-              <div class="card__links">
-                <a href="https://github.com/Libelt-sudo/supra-agent" aria-label="Source code" title="Source code">github</a>
-              </div>
-            </div>
-            <h3 class="card__title">Supra Agent</h3>
-            <p class="card__desc">
-                An AI agent for your codebase, written entirely in Node.js. No agent frameworks here.
-            </p>
-            <ul class="tags tags--small">
-              <li class="tag">TypeScript</li>
-              <li class="tag">Node.js</li>
-              <li class="tag">OpenAI-compatibale model</li>
-            </ul>
-            <a href="https://github.com/Libelt-sudo/supra-agent" class="card__cta">View project &rarr;</a>
-          </article>
-
           <!-- Project 3 -->
           <article class="card">
             <div class="card__top">
               <span class="card__icon" aria-hidden="true">{ }</span>
               <div class="card__links">
                 <a href="#" aria-label="Source code" title="Source code">github</a>
-                <a href="#" aria-label="Live demo" title="Live demo">live (Disabled)</a>
               </div>
             </div>
             <h3 class="card__title">To be added...</h3>
             <p class="card__desc">
-              --> Description goes here <--
+              ...
             </p>
             <ul class="tags tags--small">
-              <li class="tag">Probably Python</li>
-              <li class="tag">Probably Docker</li>
-              <li class="tag">Probably Linux</li>
+              <li class="tag">...</li>
             </ul>
             <a href="#" class="card__cta">View project &rarr;</a>
           </article>
@@ -241,7 +267,7 @@
   <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="container">
-      <p><span class="comment">// </span>built by L.S &mdash; <span id="year"></span></p>
+      <p><span class="comment">// </span>built by L.F.S &mdash; <span id="year"></span></p>
     </div>
   </footer>
 
